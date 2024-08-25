@@ -18,7 +18,7 @@ const config: Config = {
   organizationName: 'howdy10', // Usually your GitHub org/user name.
   projectName: 'howdy10.github.io', // Usually your repo name.
   trailingSlash: false,
-  deploymentBranch: 'main',
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
