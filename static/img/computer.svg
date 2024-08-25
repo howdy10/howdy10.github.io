@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- iMac screen -->
+  <rect x="8" y="10" width="48" height="28" rx="4" ry="4" fill="none" stroke="#6E07F3" stroke-width="2"/>
+  
+  <!-- Screen content -->
+  <rect x="12" y="14" width="40" height="4" fill="#5be9b9"/>
+  <rect x="12" y="22" width="32" height="4" fill="#5be9b9"/>
+  <rect x="12" y="30" width="36" height="4" fill="#5be9b9"/>
+
+  <!-- iMac stand -->
+  <rect x="28" y="38" width="8" height="10" fill="#6E07F3"/>
+  <rect x="24" y="48" width="16" height="2" rx="1" ry="1" fill="#6E07F3"/>
+</svg>

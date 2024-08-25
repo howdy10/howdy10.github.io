@@ -1,0 +1,8 @@
+{
+  "label": "AWS Learnings",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "A section for fun things learned in aws"
+  }
+}
