@@ -72,6 +72,11 @@ const config: Config = {
           position: 'left',
           label: 'Writing',
         },
+        {
+          to: '/experience',
+          position: 'left',
+          label: 'Experience',
+        },
         // { to: '/blog', label: 'Blog', position: 'left' },
         {
           href: 'https://www.linkedin.com/in/esaul-campos/',
@@ -128,7 +133,7 @@ const config: Config = {
       //     ],
       //   },
       // ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Esaul Campos, Inc. Built with Docusaurus.`,
       // Every day is a minor update
     },
     prism: {
