@@ -77,6 +77,13 @@ const config: Config = {
           position: 'left',
           label: 'Experience',
         },
+        {
+          to: '/files/Campos_Resume_noContact.pdf',
+          position: 'left',
+          label: 'Resume',
+          target: '_blank', // Opens the link in a new tab
+          rel: 'noopener noreferrer', // Security best practice
+        },
         // { to: '/blog', label: 'Blog', position: 'left' },
         {
           href: 'https://www.linkedin.com/in/esaul-campos/',
