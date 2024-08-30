@@ -5,6 +5,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
+import { TypeAnimation } from 'react-type-animation';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -12,7 +13,19 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          <TypeAnimation
+            sequence={[
+              // Same substring at the start will only be typed once, initially
+              'A Software Developer',
+              1000,
+              'A Software Engineer',
+              1000,
+              'A Software Engineer Like No Other',
+              500,
+            ]}
+            speed={40}
+            cursor={false}
+          />
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
       </div>
