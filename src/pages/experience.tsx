@@ -29,8 +29,8 @@ const monthNames = [
 
 const ExperienceList: ExperienceItem[] = [
   {
-    position: 'PayGround',
-    company: 'Software Engineer',
+    company: 'PayGround',
+    position: 'Software Engineer',
     start: new Date(2023, 10),
     description: (
       <>
