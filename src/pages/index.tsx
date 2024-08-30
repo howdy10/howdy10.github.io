@@ -6,6 +6,7 @@ import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
 import { TypeAnimation } from 'react-type-animation';
+import AboutMe from '@site/src/components/AboutMe';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -39,6 +40,7 @@ export default function Home(): JSX.Element {
     <Layout title={`Esaul Campos`} description="This is my personal site">
       <HomepageHeader />
       <main>
+        <AboutMe />
         <HomepageFeatures />
       </main>
     </Layout>
