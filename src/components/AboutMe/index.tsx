@@ -5,8 +5,14 @@ export default function AboutMe(): JSX.Element {
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          <div className="col col--3" />
-          <div className="col col--6">
+          <div className="col col--2" />
+          <div className="col col--3">
+            <img
+              src={require('../../../static/img/bitmoji-removebg.png').default}
+              alt="Example banner"
+            />
+          </div>
+          <div className="col col--5 padding-top--lg">
             <b>Howdy! I’m Esaul.</b>
             <p>
               I’m a software engineer based in the Phoenix area who loves a good
