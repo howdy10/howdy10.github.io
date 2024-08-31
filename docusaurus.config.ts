@@ -66,6 +66,7 @@ const config: Config = {
     -I am still using the base css it came with
     -The writing are using the markdown pages
     -It is using React so I did built so base react things
+    -Contact me page is hooked up to a firebase DB where it saved the input
 
     Thank you for coming to my ted talk -Esaul
 -->
@@ -121,6 +122,11 @@ const config: Config = {
           label: 'Resume',
           target: '_blank', // Opens the link in a new tab
           rel: 'noopener noreferrer', // Security best practice
+        },
+        {
+          to: '/contact',
+          position: 'left',
+          label: 'Contact',
         },
         // { to: '/blog', label: 'Blog', position: 'left' },
         {
