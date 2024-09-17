@@ -14,6 +14,10 @@ const mockService = jest.fn();
 jest.mock('Path to file/import', () => ({
   methodName: () => mockService(),
 }));
+
+jest.mock('This was needed to check if mock was called with values', () => ({
+  methodName: (...args) => mockService(..args),
+}));
 ```
 
 [jest.mock(moduleName, factory, options)](https://jestjs.io/docs/jest-object#jestmockmodulename-factory-options)
@@ -33,12 +37,18 @@ mockService.mockReturnValueOnce(value).mockReturnValueOnce(value);
 mockService.mockResolvedValueOnce(value).mockResolvedValueOnce(value); FOR ASYNC CALLS that are not awaited
 ```
 
-### Testing number of calls to a mock service
+### Testing calls to a mock service
 
-You can also test how many times a mocked class was called.
+You can also test how many times a mocked class was called, and what it was called with.
 
 ```js title
 expect(mockService).toHaveBeenCalledTimes(x);
+expect(mockService).toHaveBeenCalledWith('Value');
+expect(mockService).toHaveBeenLastCalledWith('Value');
+
+//You can use an expect.anything() for extra params you don't need to validate
+expect(mockService).toHaveBeenCalledWith('Value', expect.anything());
+
 jest.clearAllMocks();
 ```
 
