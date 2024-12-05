@@ -49,6 +49,11 @@ expect(mockService).toHaveBeenLastCalledWith('Value');
 //You can use an expect.anything() for extra params you don't need to validate
 expect(mockService).toHaveBeenCalledWith('Value', expect.anything());
 
+//You can use expect.objectContaining() for testing object has certain properties
+expect(mockService).toHaveBeenCalledWith(
+  expect.objectContaining({ field: 1, otherField: 0 })
+);
+
 jest.clearAllMocks();
 ```
 
@@ -56,11 +61,3 @@ jest.clearAllMocks();
 :::tip[Clear out your mocks]
 You should always clear out the number of calls if you are testing for number of calls in multiple tests. This is a good candidate for the afterEach() section.
 :::
-
-### Testing exception is thrown
-
-```js
-expect(async () => {
-  await methodTesting(input);
-}).rejects.toThrow();
-```
