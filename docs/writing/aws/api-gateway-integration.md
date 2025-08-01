@@ -95,3 +95,5 @@ Setting required via [IntegrationOptions](https://docs.aws.amazon.com/cdk/api/v2
 - CredentialsRole: needs sendMessage Permission to the queue
 - RequestTemplate: this should map to a sendMessage Action `Action=SendMEssage&MessageBody={}`
 - IntegrationResponse: The mapping you would like the client to receive
+
+SQS Queue Integration expects Content-Type to be `applications/x-www-form-urlencoded`. If your calls will not be that then you need to make sure you change the header in your IntegrationOptions in RequestParameters. [Example](https://serverlessland.com/patterns/apigw-sqs-sam)
