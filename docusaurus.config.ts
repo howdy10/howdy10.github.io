@@ -117,6 +117,11 @@ const config: Config = {
           label: 'Experience',
         },
         {
+          to: '/computer-setup',
+          position: 'left',
+          label: 'My Computer Setup',
+        },
+        {
           to: '/files/Campos_Resume_noContact.pdf',
           position: 'left',
           label: 'Resume',
